@@ -4,4 +4,5 @@
     <filter root="/content/TestA" mode="merge"/>
     <filter root="/content/dam/TestA/asset.jpg" mode="merge"/>
     <filter root="/content/experience-fragments/TestA" mode="merge"/>
+    <filter root="/var/commerce/products/TestA-default" mode="merge"/>
 </workspaceFilter>

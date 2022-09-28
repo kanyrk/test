@@ -240,7 +240,7 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Content"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:TestA - Content,/apps/TestA/components/form/container]">
+                    components="[group:TestA - Content,group:TestA - Commerce,/apps/TestA/components/form/container]">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -262,6 +262,11 @@
                                 assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
                                 droptarget="contentfragment"
                                 resourceType="TestA/components/contentfragment"/>
+                            <mapping_1575030255082
+                                jcr:primaryType="nt:unstructured"
+                                assetGroup="product"
+                                droptarget="product-data-reference"
+                                resourceType="TestA/components/commerce/productteaser"/>
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1574695586800>
@@ -278,7 +283,7 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="XF Root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:TestA - Content,/apps/TestA/components/form/container]">
+                    components="[group:TestA - Content,group:TestA - Commerce,group:TestA - Header,/apps/TestA/components/form/container]">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -300,6 +305,11 @@
                                 assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
                                 droptarget="contentfragment"
                                 resourceType="TestA/components/contentfragment"/>
+                            <mapping_1590416532200
+                                jcr:primaryType="nt:unstructured" 
+                                assetGroup="product" 
+                                droptarget="product-data-reference" 
+                                resourceType="TestA/components/commerce/productteaser" />
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
@@ -339,6 +349,98 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
+            <commerce jcr:primaryType="nt:unstructured">
+                <productlist jcr:primaryType="nt:unstructured">
+                    <default
+                        cq:styleDefaultClasses="category__style_grid"
+                        jcr:lastModified="{Date}2019-04-01T15:42:05.554+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="AEM CIF Core Components Product List"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        showTitle="true"
+                        showImage="true">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="Layout"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        cq:styleClasses="category__style_grid"
+                                        cq:styleId="1570700958199"
+                                        cq:styleLabel="Grid" />
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        cq:styleClasses="category__style_list"
+                                        cq:styleId="1570700958900"
+                                        cq:styleLabel="List" />
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </default>
+                </productlist>
+                <productcarousel jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:lastModified="{Date}2020-09-28T15:37:21.146+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="AEM CIF Core Components Product Carousel"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        allowedTypes="[h2,h3,h4,h5,h6]"
+                        type="h2">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </default>
+                </productcarousel>
+                <relatedproducts jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:lastModified="{Date}2020-09-28T15:37:21.146+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="AEM CIF Core Components Related Products"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        allowedTypes="[h2,h3,h4,h5,h6]"
+                        type="h2">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </default>
+                </relatedproducts>
+                <featuredcategorylist jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:lastModified="{Date}2020-09-28T15:37:21.146+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="AEM CIF Core Components Featured Category List"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        allowedTypes="[h2,h3,h4,h5,h6]"
+                        type="h2">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </default>
+                </featuredcategorylist>
+                <categorycarousel jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:lastModified="{Date}2020-10-15T10:12:01.134+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="AEM CIF Core Components Category Carousel"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        allowedTypes="[h2,h3,h4,h5,h6]"
+                        type="h2">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </default>
+                </categorycarousel>
+                <teaser jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:lastModified="{Date}2020-10-28T17:35:15.554+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="AEM CIF Core Components Commerce Teaser"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        titleType="h3">
+                        <jcr:content jcr:primaryType="nt:unstructured" />
+                    </default>
+                </teaser>
+            </commerce>
         </components>
     </TestA>
 </jcr:root>

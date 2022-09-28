@@ -165,6 +165,20 @@ Import-Package: javax.annotation;version=0.0.0,*
             <artifactId>org.apache.sling.models.api</artifactId>
         </dependency>
 
+        <!-- Adobe CIF Dependencies -->
+        <dependency>
+            <groupId>com.adobe.commerce.cif</groupId>
+            <artifactId>core-cif-components-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.commerce.cif</groupId>
+            <artifactId>magento-graphql</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.aem</groupId>
+            <artifactId>aem-cif-sdk-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
 
         <!-- Testing -->
         <dependency>

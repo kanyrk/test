@@ -94,6 +94,28 @@
                             <type>zip</type>
                             <target>/apps/TestA-vendor-packages/application/install</target>
                         </embedded>
+                        <embedded>
+                            <groupId>com.adobe.commerce.cif</groupId>
+                            <artifactId>core-cif-components-apps</artifactId>
+                            <type>zip</type>
+                            <target>/apps/TestA-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.adobe.commerce.cif</groupId>
+                            <artifactId>core-cif-components-config</artifactId>
+                            <type>zip</type>
+                            <target>/apps/TestA-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.adobe.commerce.cif</groupId>
+                            <artifactId>core-cif-components-core</artifactId>
+                            <target>/apps/TestA-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.adobe.commerce.cif</groupId>
+                            <artifactId>magento-graphql</artifactId>
+                            <target>/apps/TestA-vendor-packages/application/install</target>
+                        </embedded>
                     </embeddeds>
                 </configuration>
             </plugin>
@@ -210,6 +232,17 @@
         <dependency>
             <groupId>com.adobe.cq</groupId>
             <artifactId>core.wcm.components.config</artifactId>
+            <type>zip</type>
+        </dependency>
+        <!-- Adobe CIF Dependencies -->
+        <dependency>
+            <groupId>com.adobe.commerce.cif</groupId>
+            <artifactId>core-cif-components-apps</artifactId>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.commerce.cif</groupId>
+            <artifactId>core-cif-components-config</artifactId>
             <type>zip</type>
         </dependency>
     </dependencies>

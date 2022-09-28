@@ -8,6 +8,11 @@
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
         cq:template="/conf/TestA/settings/wcm/templates/page-content"
+        cq:allowedTemplates="[/conf/TestA/settings/wcm/templates/(?!(landing|root)).*]"
+        cq:cifCategoryPage="/content/TestA/us/en/products/category-page"
+        cq:cifProductPage="/content/TestA/us/en/products/product-page"
+        cq:cifSearchResultsPage="/content/TestA/us/en/search"
+        navRoot="{Boolean}true"
         sling:resourceType="TestA/components/page"
     >
         <root
@@ -76,6 +81,9 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="TestA/components/helloworld"
                         text="lalala :)"/>
+                    <productcarousel
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="TestA/components/commerce/productcarousel"/>
                 </container>
             </container>
         </root>

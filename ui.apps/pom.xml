@@ -69,6 +69,10 @@
                             <groupId>com.adobe.cq</groupId>
                             <artifactId>core.wcm.components.config</artifactId>
                         </dependency>
+                        <dependency>
+                            <groupId>com.adobe.commerce.cif</groupId>
+                            <artifactId>core-cif-components-apps</artifactId>
+                        </dependency>
                     </dependencies>
                 </configuration>
             </plugin>
@@ -122,14 +126,6 @@
 
         <dependency>
             <groupId>com.TestA</groupId>
-            <artifactId>TestA.ui.frontend</artifactId>
-            <version>${project.version}</version>
-            <type>zip</type>
-        </dependency>
-
-
-        <dependency>
-            <groupId>com.TestA</groupId>
             <artifactId>TestA.ui.apps.structure</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
@@ -172,6 +168,25 @@
             <artifactId>cq-wcm-taglib</artifactId>
         </dependency>
 
+        <!-- Adobe CIF Dependencies -->
+        <dependency>
+            <groupId>com.adobe.commerce.cif</groupId>
+            <artifactId>core-cif-components-apps</artifactId>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.commerce.cif</groupId>
+            <artifactId>core-cif-components-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.commerce.cif</groupId>
+            <artifactId>magento-graphql</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.aem</groupId>
+            <artifactId>aem-cif-sdk-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
         <!-- HTL dependencies needed for the HTL Maven Plugin source code generation -->
         <dependency>
             <groupId>org.apache.sling</groupId>

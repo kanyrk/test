@@ -14,11 +14,17 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="TestA/components/experiencefragment"
                 fragmentVariationPath="/content/experience-fragments/TestA/us/en/site/header/master"/>
-            <container
-                jcr:primaryType="nt:unstructured"
+            <container jcr:primaryType="nt:unstructured"
                 sling:resourceType="TestA/components/container"
-                editable="{Boolean}true"
-                layout="responsiveGrid"/>
+                layout="responsiveGrid">
+                <breadcrumb jcr:primaryType="nt:unstructured"
+                    sling:resourceType="TestA/components/commerce/breadcrumb"
+                    startLevel="3"
+                    structureDepth="2"/>
+                <container jcr:primaryType="nt:unstructured"
+                    sling:resourceType="TestA/components/container"
+                   editable="{Boolean}true" />
+            </container>
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">
