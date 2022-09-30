@@ -1,0 +1,3 @@
+{
+  "sling.filter.pattern": "/content/TestB/.*?/(category-page|product-page)"
+}
